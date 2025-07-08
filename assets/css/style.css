@@ -1,0 +1,22 @@
+* {
+    font-family: monospace;
+}
+
+.title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 50%;
+}
+
+nav {
+    margin: 0 auto;
+    max-width: 800px;
+    justify-content: space-between;
+    display: flex;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 800px;
+}
