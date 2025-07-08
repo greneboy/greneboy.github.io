@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }}</title>
+    <title>greneboy: {{ page.title }}</title>
     <meta name="color-scheme" content="light dark">
     <link rel="stylesheet" type="text/css" href="{{ "/assets/css/style.css" | relative_url }}">
 </head>
@@ -12,16 +12,14 @@
     {% if page.prev %}
     <a href="{{ page.prev }}">&lt; {{ page.prev }}</a>
     {% else %}
-    <u><span>greneboy(7)</span></u>
+    <u><span>greneboy</span></u>
     {% endif %}
     <span class="title">{{ page.title }}</span>
-    <u><span>greneboy(7)</span></u>
+    <u><span>greneboy</span></u>
 </nav>
 <main>
     {{ content }}
-
-    <h3>COPYRIGHT</h3>
-    &copy; 2025 greneboy
+    {% include footer.html %}
 </main>
 </body>
 </html>

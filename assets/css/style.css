@@ -2,11 +2,24 @@
     font-family: monospace;
 }
 
+@media only screen and (max-width: 600px) {
+  body {
+    margin-top: 20px;
+  }
+  .title {
+    display: none;
+  }
+}
+
+.gray {
+    color: gray;
+}
+
 .title {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    max-width: 50%;
+    max-width: 45%;
 }
 
 nav {
@@ -19,4 +32,16 @@ nav {
 main {
     margin: 0 auto;
     max-width: 800px;
+}
+
+pre {
+    border: solid 1px gray;
+    padding: 2px;
+    overflow-x:hidden;
+    overflow-x:scroll;
+}
+
+.language-plaintext {
+    border: solid 1px gray;
+    padding: 2px;
 }

@@ -5,10 +5,12 @@ prev: /
 ---
 # Blog
 
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }} {{ post.tag }}</a>
-    </li>
-  {% endfor %}
-</ul>
+{% for post in site.posts %}
+{% assign currentdate = post.date | date: "%B %Y" %}
+{% if currentdate != date %}
+## {{ currentdate }}
+{% assign date = currentdate %} 
+{% endif %}
+* <span class="gray">{{ post.date | date_to_string | date: "%d %a"}}</span> [{{ post.title }}]({{ post.url }})
+{% endfor %}
+

@@ -11,23 +11,21 @@
 <nav>
     <a href="{{ page.prev }}">&lt; {{ page.prev }}</a>
     <span class="title">{{ page.title }}</span>
-    <u><span>greneboy(7)</span></u>
+    <a href="/">index.html</a>
 </nav>
 <main>
     <p>
-        Date: {{ page.date }}<br>
+        Date: {{ page.date | date: '%A, %m/%d/%Y'}}<br>
         Tags:     
         {% for tag in page.tags %}
         <a href="{{site.baseurl}}/archive.html#{{tag | slugize}}">#{{ tag }}</a>
         {% endfor %}
     </p>
     <hr>
-    <h1>{{ page.title }}</h1>
 
+    <h1>{{ page.title }}</h1>
     {{ content }}
-    <hr>
-    <h3>COPYRIGHT</h3>
-    &copy; 2025 greneboy
+    {% include footer.html %}
 </main>
 </body>
 </html>
