@@ -2,14 +2,24 @@
 layout: default
 title: Home
 ---
-# Hello there.
-    
+# greneboy's site
 
-## [about](about.html)
+## [> about](about.html)
 * github: [greneboy](https://github.com/greneboy)
-* mastodon.social: [greneboy](https://github.com/greneboy)
-* linkedin: [greneboy](https://github.com/greneboy)
+* mastodon.social:
+* linkedin:
 
-## [blog](blog.html)
-## [projects](about.html)
-## [contributions](about.html)
+## [> blog](blog.html)
+
+### Recents
+{% for post in site.posts limit:4 %}
+* <span class="gray">{{ post.date | date_to_string | date: "%Y %b %d"}}</span> [{{ post.title }}]({{ post.url }})
+{% endfor %}
+[and more...](blog.html)
+
+## [> projects](https://github.com/greneboy?tab=repositories)
+* ### [ddcutil-bh1750](https://github.com/greneboy/ddcutil-bh1750)
+A simple ddcutil daemon that automatically adjust your monitor DDC/CI over I²C brightness using ddcutil according to the lux data from the arduino serial.
+![Image](https://raw.githubusercontent.com/greneboy/ddcutil-bh1750/main/bh1750.jpg)
+
+## > contact
