@@ -4,28 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
-    <meta name="color-scheme" content="light dark">
+    <!-- <meta name="color-scheme" content="light dark"> -->
     <link rel="stylesheet" type="text/css" href="{{ "/assets/css/style.css" | relative_url }}">
-    <link rel="stylesheet" type="text/css" href="{{ "/assets/css/ft-syntax-highlight.css" | relative_url }}">
+    <link rel="stylesheet" type="text/css" href="{{ "/assets/css/syntax-highlight.css" | relative_url }}">
 </head>
 <body>
 <nav>
-    <a href="{{ page.prev }}">&lt; {{ page.prev }}</a>
-    <span class="title">{{ page.title }}</span>
-    <a href="/">index.html</a>
+    <a href="/">greneboy</a> > <a href="{{site.baseurl}}/blog">Blog</a> > <span class="title">{{ page.title }}</span>
 </nav>
 <main>
+    <div class="clamp post-detail">
+        <h1>{{ page.title }}</h1>
+        <p><i>"{{ page.description }}"</i></p>
+
     <p>
-        Date: {{ page.date | date: '%A, %m/%d/%Y'}}<br>
-        Tags:     
-        {% for tag in page.tags %}
-        <a href="{{site.baseurl}}/archive.html#{{tag | slugize}}">#{{ tag }}</a>
-        {% endfor %}
+        <b><i>Date:</i></b> <span title="{{ page.date }}">{{ page.date | date: '%A, %m/%d/%Y'}}</span> <br>
+        <b><i>Tags:</i></b> {% for tag in page.tags %}#{{ tag }} {% endfor %}
     </p>
+    </div>
+
+
     <hr>
 
-    <h1>{{ page.title }}</h1>
-    {{ content }}
+    
+    <div class="clamp">
+        {{ content }}
+    </div>
+    <br>
     {% include footer.html %}
 </main>
 </body>

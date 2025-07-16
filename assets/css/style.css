@@ -1,19 +1,15 @@
-* {
-    font-family: monospace;
+@import url("../woff/radio-canada.css");
+@import url("../woff/roboto-mono.css");
+
+hr {
+    color: rgb(255, 255, 255);
 }
 
-@media only screen and (max-width: 600px) {
-  body {
-    margin-top: 20px;
-  }
+body {
+    font-family: Radio Canada;
+    margin: 32px 0 0 0;
+    margin-bottom: 4em;
 }
-
-.boxsizingBorder {
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
-}
-
 
 img {
     max-width: 100%;
@@ -33,23 +29,53 @@ img {
 nav {
     margin: 0 auto;
     max-width: 800px;
-    justify-content: space-between;
-    display: flex;
+    padding: 0px 7px 0 7px;
 }
 
-main {
+/* main {
     margin: 0 auto;
     max-width: 800px;
+} */
+
+.clamp {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 0px 7px 0 7px;
+}
+
+.post-detail {
+    margin-bottom: 2em;
 }
 
 pre {
-    border: solid 1px gray;
-    padding: 2px;
+    border: solid 1px rgb(190, 190, 190);
+    padding: 6px;
     overflow-x:hidden;
     overflow-x:scroll;
+    border-radius: 3px;
+    padding-bottom: 12px;
+    font-family: Roboto Mono !important;
 }
 
-.language-plaintext {
-    border: solid 1px gray;
-    padding: 2px;
+code {
+    font-family: Roboto Mono !important;
 }
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid rgb(190, 190, 190);
+    text-align: left;
+    padding: 8px;
+  }
+
+  th {
+    background-color: #dddddd;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f1f1f1;
+  }

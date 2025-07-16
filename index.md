@@ -4,16 +4,15 @@ title: Home
 ---
 # greneboy's site
 
-## [> about](about.html)
+## [> about](about)
 * github: [greneboy](https://github.com/greneboy)
-* mastodon.social:
-* linkedin:
 
-## [> blog](blog.html)
+## [> blog](blog)
 
 ### Recents
 {% for post in site.posts limit:4 %}
-* <span class="gray">{{ post.date | date_to_string | date: "%Y %b %d"}}</span> [{{ post.title }}]({{ post.url }})
+* <span class="gray">{{ post.date | date_to_string | date: "%Y %b %d"}}</span> [{{ post.title }}]({{ post.url }}) 
+{% for tag in post.tags %} #{{ tag }} {% endfor %}
 {% endfor %}
 [and more...](blog.html)
 
@@ -23,3 +22,4 @@ A simple ddcutil daemon that automatically adjust your monitor DDC/CI over I²C 
 ![Image](https://raw.githubusercontent.com/greneboy/ddcutil-bh1750/main/bh1750.jpg)
 
 ## > contact
+Can't do that yet.
