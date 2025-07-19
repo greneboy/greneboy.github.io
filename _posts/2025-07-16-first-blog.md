@@ -19,4 +19,4 @@ This blog is gonna be simple—won't be adding fancy things. If you can read thi
 6. Publish
 7. Repeat
 
-Lastly this blog it's licensed under Creative Commons Attribution 4.0 International. Also applies to my other blogs and content.
+Lastly, this blog is licensed under Creative Commons Attribution 4.0 International. Also applies to my other blogs and content.
