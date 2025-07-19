@@ -1,7 +1,6 @@
 ---
 layout: sub-default
 title: About
-prev: /
 ---
 
 

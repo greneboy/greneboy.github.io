@@ -1,7 +1,7 @@
 ---
 layout: sub-default
 title: Blog
-prev: /
+permalink: /blog/
 ---
 Mostly rants, sarcasm, jokes, rarely informative.
 
