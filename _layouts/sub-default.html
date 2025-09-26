@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ page.description }}">
+    <title>greneboy: {{ page.title }}</title>
+    <!-- <meta name="color-scheme" content="light dark"> -->
+    <link rel="stylesheet" type="text/css" href="{{ "/assets/css/style.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/syntax-highlight.css" | relative_url }}" media="(prefers-color-scheme: light)">
+    <link rel="stylesheet" href="{{ "/assets/css/syntax-highlight-dark.css" | relative_url }}" media="(prefers-color-scheme: dark)">
+</head>
+<body>
+{% include navbar.html %}
+<main>
+    <div class="clamp">
+        <h1>{{ page.title }}</h1>
+        {{ content }}
+    </div>
+    <br>
+</main>
+{% include footer.html %}
+</body>
+</html>

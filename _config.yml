@@ -1,0 +1,7 @@
+permalink: /blog/:title
+
+# Project(s) n stuff
+collections:
+  project:
+    output: true
+    permalink: /project/:title

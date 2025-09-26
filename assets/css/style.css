@@ -1,0 +1,135 @@
+@import url("../woff/inter.css");
+@import url("../woff/roboto-mono.css");
+
+:root {
+    --text: #000;
+    --bg: #fff;
+    --link: #03c;
+    --link-visited: #8900ac;
+    --border: #b9b9b9;
+    --table-even: #f1f1f1;
+    --table-th: #dddddd;
+    --code: #bd0000;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text: #ffffff;
+        --bg: #0d0d0d;
+        --link: #6bf;
+        --link-visited: #d092ff;
+        --border: #525252;
+        --table-even: #1a1a1a;
+        --table-th: #2e2e2e;
+        --code: #ff4b4b;
+    }
+}
+
+hr {
+    color: rgb(255, 255, 255);
+}
+
+p, h1, h2, h3, h4, ul, li, nav, table, a {
+    color: var(--text);
+    font-family: Inter, sans-serif;
+    font-feature-settings: "cv05" 1, "cv08" 1, "cv09" 1, "cv02" 1, "cv10" 1, "tnum" 1, "zero" 1, "ss07" 1, "opsz" 32
+}
+
+footer {
+    border-top: solid 1px var(--border);
+}
+
+.head {
+    border-bottom: dashed 1px var(--border);
+}
+
+a:visited {
+    color: var(--link-visited);
+}
+
+a {
+    color: var(--link);
+}
+
+body {
+    margin: 0;
+    margin-bottom: 4em;
+    background-color: var(--bg);
+}
+
+img {
+    max-width: 100%;
+}
+
+.gray {
+    color: gray;
+}
+
+.title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 45%;
+}
+
+nav {
+    padding: 10px 0 10px 0;
+    position: sticky;
+    justify-content: flex-start; /* Optional: use space-between if needed */
+    top: 0;
+    background-color: var(--bg);
+    border-bottom: solid 1px var(--border);
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 10px; /* Optional: spacing between items */
+}
+
+.clamp {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 0px 10px 0 10px;
+}
+
+.post-detail {
+    margin-bottom: 2em;
+}
+
+pre {
+    border: solid 1px var(--border);
+    padding: 6px;
+    overflow-x:hidden;
+    overflow-x:scroll;
+    border-radius: 3px;
+    padding-bottom: 12px;
+}
+
+code {
+    font-family: Roboto Mono !important;
+}
+
+code.language-plaintext {
+    border: solid 1px var(--border);
+    color: var(--code);
+    padding: 1px;
+    border-radius: 3px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    color: var(--text) !important
+  }
+  
+    td, th {
+    border: 1px solid var(--border);
+    text-align: left;
+    padding: 8px;
+    }
+
+    th {
+    background-color: var(--table-th);
+    }
+
+    tr:nth-child(even) {
+    background-color: var(--table-even);
+    }

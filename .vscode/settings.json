@@ -1,0 +1,12 @@
+{
+    "files.exclude": {
+        "*Gemfile*": true,
+        "**.json": true,
+        "**.yml": true,
+        ".github": true,
+        ".jekyll*": true,
+        "_site": true,
+        "assets": true,
+        "LICENSE": true,
+    }
+}
