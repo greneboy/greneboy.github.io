@@ -32,7 +32,7 @@ hr {
 p, h1, h2, h3, h4, ul, li, nav, table, a {
     color: var(--text);
     font-family: Inter, sans-serif;
-    font-feature-settings: "cv05" 1, "cv08" 1, "cv09" 1, "cv02" 1, "cv10" 1, "tnum" 1, "zero" 1, "ss07" 1, "opsz" 32
+    font-feature-settings: "cv05" 1, "cv08" 1, "cv09" 1, "cv02" 1, "cv10" 1, "tnum" 1, "zero" 1, "ss07" 1, "calt" 1, "opsz" 32
 }
 
 footer {
