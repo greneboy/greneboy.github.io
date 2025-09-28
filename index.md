@@ -9,6 +9,7 @@ description: "A personal site made by greneboy."
 
 ## [> about](about)
 * github: [greneboy](https://github.com/greneboy)
+* bluesky: [@greneboy.com](https://bsky.app/profile/greneboy.com)
 
 ## [> blog](blog)
 
