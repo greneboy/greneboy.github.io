@@ -1,7 +1,8 @@
-@import url("../woff/inter.css");
 @import url("../woff/roboto-mono.css");
 
 :root {
+    font-family: Inter, sans-serif;
+    font-feature-settings: "cv05" 1, "cv08" 1, "cv09" 1, "cv02" 1, "cv10" 1, "tnum" 1, "zero" 1, "ss07" 1, "calt" 1, "opsz" 32;
     --text: #000;
     --bg: #fff;
     --link: #03c;
@@ -14,6 +15,8 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
+        font-family: Inter, sans-serif;
+        font-feature-settings: "cv05" 1, "cv08" 1, "cv09" 1, "cv02" 1, "cv10" 1, "tnum" 1, "zero" 1, "ss07" 1, "calt" 1, "opsz" 32;
         --text: #ffffff;
         --bg: #0d0d0d;
         --link: #6bf;
@@ -25,18 +28,21 @@
     }
 }
 
+@supports (font-variation-settings: normal) {
+  :root { font-family: InterVariable, sans-serif; }
+}
+
 hr {
     color: rgb(255, 255, 255);
 }
 
 p, h1, h2, h3, h4, ul, li, nav, table, a {
     color: var(--text);
-    font-family: Inter, sans-serif;
-    font-feature-settings: "cv05" 1, "cv08" 1, "cv09" 1, "cv02" 1, "cv10" 1, "tnum" 1, "zero" 1, "ss07" 1, "calt" 1, "opsz" 32
 }
 
 footer {
     border-top: solid 1px var(--border);
+    min-height: auto;
 }
 
 .head {
@@ -118,7 +124,7 @@ table {
     border-collapse: collapse;
     width: 100%;
     color: var(--text) !important
-  }
+}
   
     td, th {
     border: 1px solid var(--border);
